@@ -9,46 +9,46 @@ class TV:
         self._control=None
         TV._numTV=TV._numTV+1
     def getNumTV():
-        return TV.numTV
+        return TV._numTV
     def setNumTV(n):
-        TV.numTV=n
+        TV._numTV=n
     def canalUp(self):
-        self.setCanal(self.canal+1)
+        self.setCanal(self._canal+1)
     def canalDown(self):
-        self.setCanal(self.canal-1)
+        self.setCanal(self._canal-1)
     def volumenUp(self):
-        self.setVolumen(self.volumen+1)
+        self.setVolumen(self._volumen+1)
     def volumenDown(self):
-        self.setVolumen(self.volumen-1)
+        self.setVolumen(self._volumen-1)
     def turnOn(self):
-        self.estado=True
+        self._estado=True
     def turnOff(self):
-        self.estado=False
+        self._estado=False
     def getEstado(self):
-        return self.estado
+        return self._estado
     def getMarca(self):
-        return self.marca
+        return self._marca
     def setMarca(self,marca):
-        self.marca=marca
+        self._marca=marca
     def getCanal(self):
-        return self.canal
+        return self._canal
     def setCanal(self,canal):
-        if (canal<1 or canal>120 or self.estado==False):
+        if (canal<1 or canal>120 or self._estado==False):
             pass
         else:
-            self.canal=canal
+            self._canal=canal
     def getVolumen(self):
-        return self.volumen
+        return self._volumen
     def setVolumen(self,volumen):
-        if (volumen<0 or volumen>7 or self.estado==False): 
+        if (volumen<0 or volumen>7 or self._estado==False): 
             pass
         else:
-            self.volumen=volumen
+            self._volumen=volumen
     def getControl(self):
-        return self.control
+        return self._control
     def setControl(self,control):
-        self.control=control
+        self._control=control
     def getPrecio(self):
-        return self.precio
+        return self._precio
     def setPrecio(self,precio):
-        self.precio=precio
+        self._precio=precio
