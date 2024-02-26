@@ -1,5 +1,5 @@
 class TV:
-    numTV=None
+    numTV=0
     def __init__(self,marca,estado):
         self.marca=marca
         self.canal=1
@@ -7,7 +7,7 @@ class TV:
         self.estado=estado
         self.volumen=1
         self.control=None
-        numTV=numTV+1
+        TV.numTV+=1
     def canalUp(self):
         self.setCanal(self.canal+1)
     def canalDown(self):
