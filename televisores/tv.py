@@ -8,8 +8,8 @@ class TV:
         self.volumen=1
         self.control=None
         TV.numTV+=1
-    def setNumTV(self,n):
-        self.numTV=n
+    def setNumTV(n):
+        TV.numTV=n
     def canalUp(self):
         self.setCanal(self.canal+1)
     def canalDown(self):
