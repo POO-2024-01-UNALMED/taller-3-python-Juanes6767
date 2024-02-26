@@ -7,7 +7,7 @@ class TV:
         self.estado=estado
         self.volumen=1
         self.control=None
-        numTV+=1
+        numTV=numTV+1
     def canalUp(self):
         self.setCanal(self.canal+1)
     def canalDown(self):
